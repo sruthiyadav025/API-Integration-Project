@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REST API Example</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background:#f4f4f4;
+            padding:20px;
+        }
+
+        h1{
+            text-align:center;
+        }
+
+        #search{
+            width:100%;
+            padding:10px;
+            margin:20px 0;
+            font-size:16px;
+        }
+
+        #loading,#error{
+            text-align:center;
+            font-size:18px;
+            margin-top:20px;
+        }
+
+        .container{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:20px;
+        }
+
+        .card{
+            background:white;
+            padding:15px;
+            border-radius:10px;
+            box-shadow:0 2px 8px rgba(0,0,0,.2);
+        }
+
+        .card h3{
+            margin-top:0;
+        }
+    </style>
+
+</head>
+<body>
+
+<h1>User Directory</h1>
+
+<input type="text" id="search" placeholder="Search user...">
+
+<div id="loading">Loading...</div>
+<div id="error"></div>
+
+<div class="container" id="users"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>s
